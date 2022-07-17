@@ -1,0 +1,28 @@
+@import "../src/components/sass/header";
+@import "../src/components/sass/home";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.light-mode {
+  --black-color: black;
+  --white-color: white;
+  --gray-color: rgb(206, 206, 206);
+  --btn-color: rgba(82, 30, 179, 0.881);
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: repeat(6, minmax(min-content, 25rem));
+  z-index: 1;
+  //display: block;
+  //position: relative;
+}

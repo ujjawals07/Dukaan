@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(253, 253, 253);
+  z-index: 10000;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1rem 5rem;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      &-img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50px;
+      }
+      h1 {
+        font-size: 2rem;
+        font-family: "Inter", sans-serif;
+        padding: 0rem 0.5rem;
+        text-transform: lowercase;
+        margin-right: 3rem;
+        //margin-left: 2rem;
+        font-weight: 700;
+      }
+    }
+    &-items {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      list-style: none;
+    }
+    &-item {
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      padding: 0.9rem 1.4rem;
+      font-weight: 400;
+    }
+    &-login {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      &-btn {
+        outline: none;
+        background: none;
+        border: none;
+        font-size: 1.1rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        padding: 0.1rem 1.3rem;
+
+        &:hover {
+          text-decoration: underline;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+      }
+    }
+    &-start-btn {
+      background-color: #146eb4;
+      color: white;
+      padding: 0.9rem 2.4rem;
+      border: none;
+      font-size: 1rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      &:hover {
+        transform: translateY(-2px);
+        transition: 0.4s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1124px) {
+  .header .nav {
+    padding: 1rem 2rem;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav-login-btn {
+    display: none;
+  }
+  .nav-start-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 489px) {
+  .header .nav .nav-content h1 {
+    font-size: 1.4rem;
+  }
+  .header .nav .nav-content .nav-logo-img{
+width: 2rem;
+height: 2rem;
+  }
+  .header .nav {
+    padding: 1rem 1.2rem;
+  }
+  
+}
+
+@media only screen and (min-width:490px) and (max-width:757px){
+  .header .nav .nav-content h1 {
+    font-size: 1.5rem;
+  }
+}
