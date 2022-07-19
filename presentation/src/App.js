@@ -2,8 +2,10 @@ import React from "react";
 import Banner from "./components/Banner";
 import Blog from "./components/Blog";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Quotes from "./components/Quotes";
 import Steps from "./components/Steps";
 import Tools from "./components/Tools";
 
@@ -19,7 +21,10 @@ const App = () => {
       <Steps />
       <Tools />
       <Blog />
-      <Banner/>
+      <Quotes />
+      <Banner />
+      <Footer />
+
     </React.Fragment>
   );
 };

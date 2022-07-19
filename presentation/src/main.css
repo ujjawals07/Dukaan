@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 .header {
   position: fixed;
   top: 0;
@@ -403,7 +404,7 @@
   -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   margin-top: 3rem;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0.1rem 1rem;
 }
 
@@ -836,7 +837,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2.8rem 1.8rem;
+  padding: 2.8rem 2.8rem;
 }
 
 .banner-btn {
@@ -898,6 +899,145 @@
   }
   .banner-btn {
     padding: 1.5rem 1.5rem;
+  }
+}
+
+.footers {
+  padding-top: 3rem;
+}
+
+.box-container {
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.box-f {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 6rem;
+          flex: 1 1 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 0rem 5rem;
+}
+
+.item-f {
+  color: #666;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  display: block;
+  padding-top: 1rem;
+  border-bottom: none;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.item-f:hover {
+  color: #146eb4;
+}
+
+.credit {
+  text-align: center;
+  width: 100%;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  color: #999;
+}
+
+@media (max-width: 901px) {
+  .box-f {
+    padding: 0rem 0.5rem;
+  }
+  .item-f {
+    font-size: 1rem;
+  }
+}
+
+.q {
+  margin: 7rem 0rem;
+  padding: 0.5rem 5rem;
+  background-color: rgba(255, 255, 255, 0.943);
+}
+
+.q h4 {
+  font-size: 4rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 800;
+}
+
+.q h5 {
+  font-size: 1.5rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.q-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.q-content h1 {
+  font-size: 2.2rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 800;
+  padding: 2rem 0rem;
+}
+
+.q-content h2 {
+  font-size: 1.5rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.q-content span {
+  font-size: 1.4rem;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  padding: 0rem 1rem;
+  text-transform: capitalize;
+  color: gray;
+}
+
+@media (max-width: 644px) {
+  .q {
+    padding: 0rem 1rem;
+  }
+  .q h4 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .q-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .q-content h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .q-content h1 {
+    text-align: center;
+    font-size: 1.7rem;
   }
 }
 
