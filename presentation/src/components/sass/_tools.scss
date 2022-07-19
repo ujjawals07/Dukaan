@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;600;700;800;900&family=Merriweather+Sans:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,500;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 .tools {
+  h6 {
+    font-size: 3rem;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 700;
+    padding: 2rem 3rem;
+  }
   overflow: hidden;
   &-container {
     display: grid;
@@ -27,5 +33,22 @@
       width: 80%;
       color: #4d4d4d;
     }
+  }
+}
+@media (max-width: 720px) {
+  .svg-d {
+    margin: 0 auto;
+  }
+  .tools .tools-item {
+    align-items: center;
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .tools h6 {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1rem 1rem;
   }
 }

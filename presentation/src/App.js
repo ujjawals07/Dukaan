@@ -1,4 +1,6 @@
 import React from "react";
+import Banner from "./components/Banner";
+import Blog from "./components/Blog";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -13,10 +15,11 @@ const App = () => {
       <Home />
       <div className="container">
         <Card />
-       
       </div>
       <Steps />
-      <Tools/>
+      <Tools />
+      <Blog />
+      <Banner/>
     </React.Fragment>
   );
 };

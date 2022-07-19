@@ -5,7 +5,7 @@ import SvgOne from "./SvgOne";
 const Steps = () => {
   return (
     <section className="steps">
-      <h1>Your dream business just three steps away!</h1>
+      <h6>Your dream business just three steps away!</h6>
       <div className="steps-container">
         <div className="steps-item">
           <div className="steps-item-content">

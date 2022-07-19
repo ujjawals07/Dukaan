@@ -4,6 +4,7 @@ import SvgThree from "./SvgThree";
 const Tools = () => {
   return (
     <section className="tools">
+      <h6>E-commerce, made (incredibly) easy</h6>
       <div className="tools-container">
         <div className="tools-item">
           <SvgThree />
