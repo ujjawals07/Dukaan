@@ -1,7 +1,8 @@
 import React from "react";
 import Cart from "../img/store-person-1.jpg";
 import SvgOne from "./SvgOne";
-
+import Step2 from "../img/step2.svg";
+import Step3 from "../img/step3.svg";
 const Steps = () => {
   return (
     <section className="steps">
@@ -25,7 +26,7 @@ const Steps = () => {
         <div className="steps-item item2">
           <div className="steps-item-content content2">
             <h1 className="step2">Step 2</h1>
-            <h2>Name your store</h2>
+            <h2> Add your products</h2>
             <p>
               Bakery or boutique, art or apparel...now it’s time to sell. Let
               the world know what you have to offer. Add your products, set the
@@ -33,13 +34,13 @@ const Steps = () => {
             </p>
           </div>
           <div className="steps-item-img">
-            <SvgOne />
+            <img src={Step2} className="steps-item-pic" />
           </div>
         </div>
         <div className="steps-item">
           <div className="steps-item-content">
             <h1 className="step3">Step 3</h1>
-            <h2>Name your store</h2>
+            <h2>Start selling</h2>
             <p>
               The moment of truth. The leap of faith. This is where it all
               begins. Your store is ready for the world. Start sharing and
@@ -48,7 +49,7 @@ const Steps = () => {
           </div>
 
           <div className="steps-item-img">
-            <SvgOne />
+            <img src={Step3} className="steps-item-pic" />
           </div>
         </div>
       </div>

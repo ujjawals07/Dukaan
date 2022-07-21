@@ -58,6 +58,37 @@
   &-img {
     width: 45%;
     height: 100%;
+    position: relative;
+    &-text-container {
+      position: absolute;
+      top: 5%;
+      left: 20%;
+      animation: run 10s linear infinite;
+
+      div:nth-child(2) {
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+      }
+      div:nth-child(3) {
+        margin-top: 12rem;
+        margin-right: 4rem;
+      }
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 0.5rem 0.2rem;
+      margin-top: 1rem;
+      span {
+        margin-left: 1rem;
+        color: black;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
   }
   &-pic {
     width: 100%;
@@ -70,6 +101,7 @@
   align-self: center;
   cursor: pointer;
 }
+
 @keyframes fadeup {
   0% {
     opacity: 0;
@@ -159,5 +191,80 @@
   }
   .home {
     padding: 0.6rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 972px) and (max-width: 1251px) {
+  .home .home-img .home-img-text-container {
+    div:nth-child(2) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+    div:nth-child(3) {
+      margin-top: 6rem;
+      margin-right: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 433px) and (max-width: 600px) {
+  .home .home-img .home-img-text-container {
+    div:nth-child(2) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+    div:nth-child(3) {
+      margin-top: 5rem;
+      margin-right: 4rem;
+    }
+  }
+
+  .home .home-img .home-img-text-container .home-img-text {
+    padding: 0.3rem 0.1rem;
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 432px) {
+  .home .home-img .home-img-text-container {
+    div:nth-child(2) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+    div:nth-child(3) {
+      margin-top: 5rem;
+      margin-right: 4rem;
+    }
+  }
+
+  .home .home-img .home-img-text-container .home-img-text {
+    padding: 0.3rem 0.1rem;
+    span {
+      font-size: 0.7rem;
+      margin-left: 0.4rem;
+    }
+  }
+}
+@keyframes run {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }

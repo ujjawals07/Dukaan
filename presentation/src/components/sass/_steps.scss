@@ -50,6 +50,10 @@
     &-img {
       padding: 1rem 2rem;
     }
+    &-pic {
+      width: 484px;
+      height: 336px;
+    }
   }
 }
 .item2 {
@@ -103,6 +107,12 @@
       padding: 0.1rem 0.1rem;
       margin: 0 auto;
     }
+    &-item-pic{
+      margin-top: 2rem;
+      width: 284px;
+      height: auto;
+      align-items: center;
+    }
   }
   .content2 {
     margin-right: 0.2rem;
@@ -139,6 +149,12 @@
     &-item-img {
       padding: 0.1rem 0.1rem;
       margin: 0 auto;
+    }
+    &-item-pic{
+      margin-top: 2rem;
+      width: 384px;
+      height: auto;
+      align-items: center;
     }
   }
   .content2 {

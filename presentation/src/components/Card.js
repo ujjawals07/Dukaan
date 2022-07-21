@@ -12,29 +12,29 @@ const Card = () => {
           <div className="card-item-img">
             <img src={Cardimg} className="card-item-pic" />
           </div>
-          <h2>gini & jony</h2>
-          <p>parle G wholeseller</p>
+          <h2>vu store</h2>
+          <p>Electronics</p>
         </div>
         <div className="card-item">
           <div className="card-item-img">
             <img src={Cardimg2} className="card-item-pic" />
           </div>
           <h2>gini & jony</h2>
-          <p>parle G wholeseller</p>
+          <p>Faishion & Apparels</p>
         </div>
         <div className="card-item">
           <div className="card-item-img">
             <img src={Cardimg3} className="card-item-pic" />
           </div>
-          <h2>gini & jony</h2>
-          <p>parle G wholeseller</p>
+          <h2>chai point</h2>
+          <p>organic tea</p>
         </div>
         <div className="card-item">
           <div className="card-item-img">
             <img src={Cardimg4} className="card-item-pic" />
           </div>
-          <h2>gini & jony</h2>
-          <p>parle G wholeseller</p>
+          <h2>the nonsense store</h2>
+          <p>games</p>
         </div>
       </div>
     </div>
